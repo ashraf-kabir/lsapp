@@ -26,7 +26,7 @@ class AddCoverImageToPosts extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            //
+            $table->dropColumn('cover_image');
         });
     }
 }
