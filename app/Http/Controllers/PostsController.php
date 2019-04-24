@@ -68,9 +68,9 @@ class PostsController extends Controller
             // Get Just ext
             $extension = $request->file('cover_image')->getClientOriginalExtension();
             // Filename to store
-            $filenameToStore = $filename.'_'.time().'.'.$extension;
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
             // Upload Image
-            $path = $request->file('cover_image')->storeAs('public/cover_images', $filenameToStore);
+            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
         } else {
             $fileNameToStore = 'noimage.jpg';
         }
@@ -130,10 +130,27 @@ class PostsController extends Controller
             'body' => 'required'
         ]);
 
+        // Handle File Upload
+        if ($request->hasFile('cover_image')) {
+            // Get filename with the extension
+            $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+            // Get Just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            // Get Just ext
+            $extension = $request->file('cover_image')->getClientOriginalExtension();
+            // Filename to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            // Upload Image
+            $path = $request->file('cover_image')->storeAs('public/cover_images', $fileNameToStore);
+        }
+
         // Update Post
         $post = Post::find($id);
         $post->title = $request->input('title');
         $post->body = $request->input('body');
+        if ($request->hasFile('cover_image')) {
+            $post->cover_image = $fileNameToStore;
+        }
         $post->save();
 
         return redirect('/posts')->with('success', 'Post Updated');
