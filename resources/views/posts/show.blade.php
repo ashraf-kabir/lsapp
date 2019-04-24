@@ -10,7 +10,7 @@
     <hr>
     <small>Written on {{$post->created_at}}</small>
     <hr>
-    <a href="/posts/{{$post->id}}/edit" class="btn btn-info">Edit</a>
+    <a href="/posts/{{$post->id}}/edit" class="btn btn-info" style="color: #fff;">Edit</a>
 
     {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'float-right'])!!}
         {{Form::hidden('_method', 'DELETE')}}
