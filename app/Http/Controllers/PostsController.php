@@ -168,7 +168,7 @@ class PostsController extends Controller
         $post = Post::find($id);
 
         // Check for correct user
-        if (auth()->user()->id !== $post->user_id) {
+        if (auth()->user()->id !== $post->user_id) {                          // !== means 'not identical'
             return redirect('/posts')->with('error', 'Unauthorized Page');
         }
 
