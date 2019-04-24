@@ -20,12 +20,16 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        @include('inc.navbar')
-        <div class="container" style="padding-top: 20px;">
-            @include('inc.messages')
-            @yield('content')
-        </div>
+    @include('inc.navbar')
+    <div class="container" style="padding-top: 20px;">
+        @include('inc.messages')
+        @yield('content')
     </div>
+
+    <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace( 'article-ckeditor' );
+    </script>
+    
 </body>
 </html>
