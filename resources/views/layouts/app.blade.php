@@ -26,6 +26,10 @@
         @yield('content')
     </div>
 
+    <footer id="footer" class="text-center">
+        <p>Copyright MMXIX &copy; Ashraf Kabir</p>
+    </footer>
+
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace( 'article-ckeditor' );
