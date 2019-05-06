@@ -5,6 +5,6 @@
         <p class="card-text">
             This is the sidebar
         </p>
+        @show
     </div>
 </div>
-@show
