@@ -58,8 +58,15 @@
 <body>
     @include('inc.navbar')
     <div class="container" style="padding-top: 20px;">
-        @include('inc.messages')
-        @yield('content')
+        <div class="row">
+            <div class="col-md-9 col-lg-9">
+                @include('inc.messages')
+                @yield('content')
+            </div>
+            <div class="col-md-3 col-lg-3">
+                @include('inc.sidebar')
+            </div>
+        </div>
     </div>
 
     <footer id="footer" class="text-center">
