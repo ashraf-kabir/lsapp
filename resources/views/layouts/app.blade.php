@@ -19,6 +19,42 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
+<style>
+    .quotation{
+        font-size: 30px;
+        quotes: "\201C""\201D""\2018""\2019";
+        padding: 10px 20px;
+        line-height: 1.4;
+    }
+    .quotation:before {
+        content: open-quote;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        left: -10px;
+        position: relative;
+        top: 30px;
+        color: #ccc;
+        font-size: 3em;
+    }
+    .quotation::after {
+        content: close-quote;
+        display: inline;
+        height: 0;
+        line-height: 0;
+        left: 10px;
+        position: relative;
+        top: 35px;
+        color: #ccc;
+        font-size: 3em;
+    }
+    #quote{
+        margin:0;
+        text-align: right;
+        font-size: 1.5em;
+        font-style: italic;
+    }
+</style>
 <body>
     @include('inc.navbar')
     <div class="container" style="padding-top: 20px;">
