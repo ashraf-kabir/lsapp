@@ -13,9 +13,9 @@
     <h5 class="card-header">Useful Links</h5>
     <div class="card-body">
         <ul class="mb-0">
-            <li><a href="https://www.google.com/">Google</a></li>
-            <li><a href="https://www.youtube.com/">Youtube</a></li>
-            <li><a href="https://laravel.com/">Laravel</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.google.com/">Google</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/">Youtube</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://laravel.com/">Laravel</a></li>
         </ul>
     </div>
 </div>
