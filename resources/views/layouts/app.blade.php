@@ -55,9 +55,9 @@
         font-style: italic;
     }
 </style>
-<body>
+<body style="padding-top: 65px">
     @include('inc.navbar')
-    <div class="container" style="padding-top: 20px;">
+    <div class="container">
         <div class="row">
             <div class="col-md-9 col-lg-9">
                 @include('inc.messages')
