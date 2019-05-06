@@ -1,10 +1,21 @@
 @section('sidebar')
 <div class="card">
+    <h4 class="card-header">Sidebar</h4>
     <div class="card-body">
-        <h3 class="card-title">Recent posts</h3>
         <p class="card-text">
             This is the sidebar
         </p>
         @show
+    </div>
+</div>
+
+<div class="card my-4">
+    <h5 class="card-header">Useful Links</h5>
+    <div class="card-body">
+        <ul class="mb-0">
+            <li><a href="https://www.google.com/">Google</a></li>
+            <li><a href="https://www.youtube.com/">Youtube</a></li>
+            <li><a href="https://laravel.com/">Laravel</a></li>
+        </ul>
     </div>
 </div>

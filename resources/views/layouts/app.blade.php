@@ -55,7 +55,7 @@
         font-style: italic;
     }
 </style>
-<body style="padding-top: 65px">
+<body style="padding-top: 70px">
     @include('inc.navbar')
     <div class="container">
         <div class="row">
