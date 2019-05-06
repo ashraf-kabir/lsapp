@@ -55,7 +55,7 @@
         font-style: italic;
     }
 </style>
-<body style="padding-top: 70px">
+<body style="padding-top: 70px; padding-bottom: 80px;">
     @include('inc.navbar')
     <div class="container">
         <div class="row">
@@ -69,9 +69,12 @@
         </div>
     </div>
 
-    <footer id="footer" class="text-center">
-        <p>Copyright MMXIX &copy; Ashraf Kabir</p>
-    </footer>
+    <div class="fixed-bottom">
+        <footer id="footer" class="text-center">
+            <p>Copyright MMXIX &copy; Ashraf Kabir</p>
+        </footer>
+    </div>
+    
 
     <script src="/vendor/unisharp/laravel-ckeditor/ckeditor.js"></script>
     <script>
