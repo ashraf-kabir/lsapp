@@ -19,6 +19,23 @@
             <footer id="quote">— Winston S. Churchill</footer>
         </blockquote>
         <hr>
+        <br>
+        <hr>
+        <blockquote>
+            <p class="quotation">
+                When you want something, all the universe conspires in helping you to achieve it.
+            </p>
+            <footer id="quote">— Paulo Coelho (The Alchemist)</footer>
+        </blockquote>
+        <hr>
+        <br>
+        <hr>
+        <blockquote>
+            <p class="quotation">
+                If you only read the books that everyone else is reading, you can only think what everyone else is thinking.
+            </p>
+            <footer id="quote">— Haruki Murakami (Norwegian Wood)</footer>
+        </blockquote>
     </div>
 @endsection
 
