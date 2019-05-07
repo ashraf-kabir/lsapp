@@ -32,9 +32,9 @@
         <hr>
         <blockquote>
             <p class="quotation">
-                If you only read the books that everyone else is reading, you can only think what everyone else is thinking.
+                Lost opportunities, lost possibilities, feelings we can never get back. That's part of what it means to be alive. But inside our heads - at least that's where I imagine it - there's a little room where we store those memories. A room like the stacks in this library. And to understand the workings of our own heart we have to keep on making new reference cards. We have to dust things off every once in awhile, let in fresh air, change the water in the flower vases. In other words, you'll live forever in your own private library.
             </p>
-            <footer id="quote">— Haruki Murakami (Norwegian Wood)</footer>
+            <footer id="quote">— Haruki Murakami (Kafka on the Shore)</footer>
         </blockquote>
     </div>
 @endsection
